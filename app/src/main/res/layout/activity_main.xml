@@ -7,23 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
-        tools:ignore="MissingConstraints">
-
-    </LinearLayout>
-
     <TextView
         android:id="@+id/Home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:layout_marginBottom="8dp"
         android:text="@string/home"
         android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="64dp"
@@ -43,6 +38,15 @@
         app:layout_constraintTop_toBottomOf="@+id/Home"
         tools:ignore="MissingConstraints,RtlCompat"
         tools:layout_editor_absoluteX="3dp" />
+
+    <ListView
+        android:id="@+id/listaAtv"
+        android:layout_width="310dp"
+        android:layout_height="457dp"
+        app:layout_constraintBottom_toTopOf="@+id/Adicionar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView6"
