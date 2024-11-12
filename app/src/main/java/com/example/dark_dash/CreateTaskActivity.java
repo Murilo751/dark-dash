@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class CreateTaskActivity extends AppCompatActivity {
@@ -23,9 +24,7 @@ public class CreateTaskActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_task);
 
-        //criando conexão com o banco
         createConection();
-
         taskTitle = findViewById(R.id.taskTitle);
         taskDescription = findViewById(R.id.taskDescription);
         saveButton = findViewById(R.id.saveButton);
@@ -38,7 +37,6 @@ public class CreateTaskActivity extends AppCompatActivity {
         String description = taskDescription.getText().toString();
         Intent voltar_main = new Intent(CreateTaskActivity.this, MainActivity.class);
         startActivity(voltar_main);
-        // Aqui você pode salvar os dados, seja em um banco de dados local ou enviando para uma API
         TaskDAO taskDAO = new TaskDAO(connection);
         Task task = new Task(title, description);
         taskDAO.insert(task);
