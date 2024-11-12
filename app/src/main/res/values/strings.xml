@@ -1,7 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">dark-dash</string>
-    <string name="sucess_conection">Conexão criada com sucesso!</string>
-    <string name="adicionar_tarefa">Adicionar Tarefa</string>
-    <string name="descricao_imagem">Descrição</string>
+    <string name="sucess_conection">Successful create connection!</string>
+    <string name="adicionar_tarefa">Add Task</string>
+    <string name="descricao_imagem">Image Description</string>
     <string name="home">Home</string>
+    <string name="name_task">Task Name</string>
+    <string name="description">Description</string>
+    <string name="save">Save</string>
+    <string name="description_checkbox">Task completed checkbox</string>
 </resources>
