@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="@+id/taskTitle"
-        android:contentDescription="Task completed checkbox" />
+        android:contentDescription="@string/description_checkbox" />
 
     <!-- Título da Tarefa -->
     <TextView
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="4dp"
-        android:text="Task Title"
+        android:text="@string/name_task"
         android:textSize="18sp"
         android:textStyle="bold"
         android:ellipsize="end"
@@ -38,7 +38,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Task Description"
+        android:text="@string/description"
         android:textSize="14sp"
         android:ellipsize="end"
         android:maxLines="2"
